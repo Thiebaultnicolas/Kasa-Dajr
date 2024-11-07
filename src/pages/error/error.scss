@@ -1,0 +1,33 @@
+.error-page {
+
+
+    img {
+        display: block;
+        width: 198px;    
+        margin: 139px auto 139px auto;
+    }
+
+    p {
+        color: #FF6060;
+        margin-bottom: 139px;
+    }
+
+    a {
+        text-decoration: underline;
+        color: black;
+    }
+
+    @media screen and (min-width: 769px) {
+
+        img {
+            width: 597px;
+            /*margin: 139px auto 139px auto;*/
+        }
+
+        /*p {
+            margin-bottom: 139px;
+        }*/
+        
+    }
+
+}

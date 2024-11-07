@@ -1,6 +1,7 @@
 import './accordeon.scss'
 import ArrowUp from '../../assets/arrow-up.svg'
 import { useRef, useState } from 'react'
+import PropTypes from "prop-types";
 
 const Accordeon = ({title, children}) => {
 
@@ -33,5 +34,10 @@ const Accordeon = ({title, children}) => {
         </div>
     </div>
 }
+
+Accordeon.propTypes = {
+    title: PropTypes.string.isRequired,
+    children: PropTypes.element.isRequired,
+  };
 
 export default Accordeon

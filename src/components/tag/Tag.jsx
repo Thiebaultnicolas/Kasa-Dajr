@@ -2,7 +2,7 @@ import "./tag.scss";
 import PropTypes from "prop-types";
 
 const Tag = ({ name }) => {
-  return <p>{name}</p>;
+  return <p className="tag">{name}</p>;
 };
 
 Tag.propTypes = {

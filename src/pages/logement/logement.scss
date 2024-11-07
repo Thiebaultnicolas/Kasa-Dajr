@@ -1,9 +1,23 @@
-.accordeons-Logement {
+.logement-page {
+  padding-top: 50px;
+}
+
+.accordeons-logement {
     display: flex;
-    gap: 50%;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 769px) {
+      gap: 76px;
+      flex-wrap: nowrap;
+    }
    
     .accordeon {
         margin-bottom: 28px;
+        width: 100%;
+
+        @media screen and (min-width: 769px) {
+          width: 50%;          
+        }
     }
     .accordeon-title {
         background: #FF6060;
@@ -65,17 +79,6 @@
     list-style: none;
     padding: 0;
     margin: 10px 0;
-  
-    li {
-      background-color: #FF6060; 
-      color: white;
-      padding: 0px 35px;
-      border-radius: 25px; 
-      font-size: 11px;
-      font-weight: bold;
-      text-align: center;
-      white-space: nowrap; 
-    }
   }
 .DescriptionLogement {
     display: flex;
@@ -86,8 +89,11 @@
     flex-direction: column;
 }
 
+
+
 .logement-header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
@@ -106,10 +112,22 @@
       margin: 0 0 10px 0; 
     }
 
+    .rating {
+      justify-content: flex-end;
+    }
+
   
     .host-info {
       display: flex;
       align-items: center;
+      justify-content: flex-end;
+      margin-right: 0;
+      margin-left: auto;
+
+      @media screen and (min-width: 769px) {
+        margin-bottom: 30px;
+      }
+
   
       p {
         margin-right: 10px;
@@ -124,11 +142,35 @@
         object-fit: cover;
       }
     }
+
+    .left {
+      width: 100%;
+    }
+    
+    .right {
+      width: 100%;
+      display: flex;
+
+      @media screen and (min-width: 769px) {
+        display: block;
+      }
+    }
+
+    .rating {
+      order: -1;
+    }
+
+    @media screen and (min-width: 769px) {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
   }
   
   h1 {
     color: #FF6060;
     font-size: 35px;
+    text-align: left;
+    font-weight: 500;
   }
 
  

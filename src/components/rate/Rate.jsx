@@ -13,10 +13,10 @@ const Rate = ({ rating }) => {
   );
 
   return (
-    <>
+    <div className="rating">
       {starActive}
       {starInactive}
-    </>
+    </div>
   );
 };
 

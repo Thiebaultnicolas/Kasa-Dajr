@@ -1,4 +1,4 @@
-import { Outlet, useLocation, Link } from "react-router-dom";
+import { Outlet, useLocation, Link, NavLink } from "react-router-dom";
 import LogoKasa from "./assets/LogoKasa.png";
 import LogoKasaFooter from "./assets/LogoKasaFooter.png";
 import "./App.scss";
@@ -16,10 +16,10 @@ const App = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/">Accueil</Link>
+              <NavLink to="/">Accueil</NavLink>
             </li>
             <li>
-              <Link to="/a-propos">A propos</Link>
+              <NavLink to="/a-propos">A propos</NavLink>
             </li>
           </ul>
         </nav>
